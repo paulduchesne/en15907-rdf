@@ -1,0 +1,485 @@
+[
+    {
+        "entity": "Cinematographic Work",
+        "notation": "4.1",
+        "Attributes": [
+            "descriptionLevel"
+        ],
+        "Elements": [
+            "Identifier",
+            "Record source",
+            "Title",
+            "Identifying title",
+            "Country of reference",
+            "Year of reference",
+            "Language",
+            "Subject terms",
+            "Content description"
+        ],
+        "Allowed relationships": [
+            "HasAgent",
+            "HasEvent",
+            "HasContent",
+            "HasAsSubject",
+            "HasOtherRelation",
+            "HasVariant",
+            "HasManifestation"
+        ]
+    },
+    {
+        "entity": "Variant",
+        "notation": "4.2",
+        "Attributes": [
+            "sourceID",
+            "variantType"
+        ],
+        "Elements": [
+            "Identifier",
+            "Record source",
+            "Title",
+            "Language"
+        ],
+        "Allowed relationships": [
+            "HasAgent",
+            "HasEvent",
+            "HasOtherRelation",
+            "HasManifestation"
+        ]
+    },
+    {
+        "entity": "Manifestation",
+        "notation": "4.3",
+        "Attributes": [
+            "sourceID",
+            "manifestationType"
+        ],
+        "Elements": [
+            "Identifier",
+            "Record source",
+            "Title",
+            "Language",
+            "Extent",
+            "Format"
+        ],
+        "Allowed relationships": [
+            "HasAgent",
+            "HasEvent",
+            "HasOtherRelation",
+            "HasItem"
+        ]
+    },
+    {
+        "entity": "Item",
+        "notation": "4.4",
+        "Attributes": [
+            "sourceID"
+        ],
+        "Elements": [
+            "Title",
+            "Holding institution",
+            "Inventory number",
+            "Instantiation type",
+            "Item specifics",
+            "Access conditions",
+            "Catalogue reference",
+            "Extent"
+        ],
+        "Allowed relationships": [
+            "HasAgent",
+            "HasEvent",
+            "HasOtherRelation"
+        ]
+    },
+    {
+        "entity": "Content",
+        "notation": "4.5",
+        "Attributes": [],
+        "Elements": [
+            "Subject terms",
+            "Content description"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "entity": "Agent",
+        "notation": "5.1",
+        "Attributes": [
+            "sourceID"
+        ],
+        "Elements": [
+            "Name",
+            "Agent type",
+            "Agent reference",
+            "Agent instance"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Identifier",
+        "notation": "6.1",
+        "Attributes": [],
+        "Elements": [
+            "Scheme",
+            "Value",
+            "Numeric"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Record source",
+        "notation": "6.2",
+        "Attributes": [],
+        "Elements": [
+            "Source name",
+            "Source identifier"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Title",
+        "notation": "6.3",
+        "Attributes": [],
+        "Elements": [
+            "Title text",
+            "Part designation",
+            "Title relationship",
+            "Temporal scope",
+            "Geographic scope"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Part designation",
+        "notation": "6.3.3",
+        "Attributes": [],
+        "Elements": [
+            "Unit",
+            "Value"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Identifying title",
+        "notation": "6.4",
+        "Attributes": [
+            "origin"
+        ],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Country of Reference",
+        "notation": "6.5",
+        "Attributes": [
+            "reference"
+        ],
+        "Elements": [
+            "Country"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Year of reference",
+        "notation": "6.6",
+        "Attributes": [
+            "reference"
+        ],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Format",
+        "notation": "6.7",
+        "Attributes": [],
+        "Elements": [
+            "Carrier type",
+            "Gauge",
+            "Aspect ratio",
+            "Sound system",
+            "Colour"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Sound system",
+        "notation": "6.7.3",
+        "Attributes": [],
+        "Elements": [
+            "Has Sound",
+            "Is recording system",
+            "System name",
+            "Method"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Colour",
+        "notation": "6.7.3",
+        "Attributes": [],
+        "Elements": [
+            "Chromatism",
+            "Colour system"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Chromatism",
+        "notation": "6.7.3",
+        "Attributes": [
+            "vocabularySource"
+        ],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Extent",
+        "notation": "6.8",
+        "Attributes": [
+            "unit",
+            "reference",
+            "frameRate"
+        ],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Language",
+        "notation": "6.9",
+        "Attributes": [
+            "usage"
+        ],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Production event",
+        "notation": "6.10",
+        "Attributes": [
+            "sourceID"
+        ],
+        "Elements": [
+            "Production event type",
+            "Region",
+            "Location",
+            "Date",
+            "Event details"
+        ],
+        "Allowed relationships": [
+            "HasAgent",
+            "HasOtherRelation"
+        ]
+    },
+    {
+        "element": "Publication event",
+        "notation": "6.11",
+        "Attributes": [
+            "sourceID"
+        ],
+        "Elements": [
+            "Publication type",
+            "Publication date",
+            "Region",
+            "Location",
+            "Event name",
+            "Access conditions"
+        ],
+        "Allowed relationships": [
+            "HasAgent",
+            "HasOtherRelation"
+        ]
+    },
+    {
+        "element": "Award",
+        "notation": "6.12",
+        "Attributes": [],
+        "Elements": [
+            "Date",
+            "Nomination only",
+            "Award name",
+            "Achievement",
+            "Event relationship"
+        ],
+        "Allowed relationships": [
+            "HasAgent",
+            "HasEvent",
+            "HasOtherRelation"
+        ]
+    },
+    {
+        "element": "Decision event",
+        "notation": "6.13",
+        "Attributes": [
+            "sourceID"
+        ],
+        "Elements": [
+            "Decision type",
+            "Decision date",
+            "Regional scope",
+            "Certificate number",
+            "Verdict"
+        ],
+        "Allowed relationships": [
+            "HasAgent",
+            "HasOtherRelation"
+        ]
+    },
+    {
+        "element": "IPR registration",
+        "notation": "6.14",
+        "Attributes": [],
+        "Elements": [
+            "Registration date",
+            "Registration agency",
+            "Regional scope",
+            "Name of applicant"
+        ],
+        "Allowed relationships": [
+            "HasAgent",
+            "HasOtherRelation"
+        ]
+    },
+    {
+        "element": "Preservation event",
+        "notation": "6.15",
+        "Attributes": [],
+        "Elements": [
+            "Preservation type",
+            "Date",
+            "Preservation detail"
+        ],
+        "Allowed relationships": [
+            "HasAgent",
+            "HasOtherRelation"
+        ]
+    },
+    {
+        "element": "Subject terms",
+        "notation": "6.16",
+        "Attributes": [
+            "scheme",
+            "language"
+        ],
+        "Elements": [
+            "Term"
+        ],
+        "Allowed relationships": [
+            "HasAgent",
+            "HasOtherRelation"
+        ]
+    },
+    {
+        "element": "Term",
+        "notation": "6.16.3",
+        "Attributes": [
+            "termid"
+        ],
+        "Elements": [
+            "Term name"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Content description",
+        "notation": "6.17",
+        "Attributes": [],
+        "Elements": [
+            "Description type",
+            "Description text",
+            "Language",
+            "Description source"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Region",
+        "notation": "7.2",
+        "Attributes": [],
+        "Elements": [
+            "Code",
+            "Region name"
+        ],
+        "Allowed relationships": []
+    },
+    {
+        "element": "Code",
+        "notation": "7.2.3",
+        "Attributes": [
+            "scheme"
+        ],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "relationship": "HasAgent",
+        "notation": "8.2",
+        "Attributes": [
+            "activity",
+            "creditRank",
+            "nameUsed",
+            "activityDetail",
+            "character"
+        ],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "relationship": "HasEvent",
+        "notation": "8.3",
+        "Attributes": [
+            "relationshipType",
+            "relationshipDetail"
+        ],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "relationship": "HasContent",
+        "notation": "8.4",
+        "Attributes": [
+            "role"
+        ],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "relationship": "HasAsSubject",
+        "notation": "8.5",
+        "Attributes": [
+            "relationshipType",
+            "relationshipDetail"
+        ],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "relationship": "HasOtherRelation",
+        "notation": "8.6",
+        "Attributes": [
+            "relationshipType",
+            "relationshipDetail"
+        ],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "relationship": "HasVariant",
+        "notation": "8.7",
+        "Attributes": [],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "relationship": "HasManifestation",
+        "notation": "8.8",
+        "Attributes": [],
+        "Elements": [],
+        "Allowed relationships": []
+    },
+    {
+        "relationship": "HasItem",
+        "notation": "8.9",
+        "Attributes": [],
+        "Elements": [],
+        "Allowed relationships": []
+    }
+]
