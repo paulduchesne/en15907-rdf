@@ -1,0 +1,604 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://filmstandards.org/HasAccessconditions> a owl:ObjectProperty ;
+    rdfs:label "Has Access conditions"@en ;
+    rdfs:domain <http://filmstandards.org/Item>,
+        <http://filmstandards.org/Publicationevent> ;
+    rdfs:range <http://filmstandards.org/Accessconditions> .
+
+<http://filmstandards.org/HasAchievement> a owl:ObjectProperty ;
+    rdfs:label "Has Achievement"@en ;
+    rdfs:domain <http://filmstandards.org/Award> ;
+    rdfs:range <http://filmstandards.org/Achievement> .
+
+<http://filmstandards.org/HasAgent> a owl:ObjectProperty ;
+    rdfs:label "HasAgent"@en ;
+    rdfs:domain <http://filmstandards.org/Award>,
+        <http://filmstandards.org/CinematographicWork>,
+        <http://filmstandards.org/Decisionevent>,
+        <http://filmstandards.org/IPRregistration>,
+        <http://filmstandards.org/Item>,
+        <http://filmstandards.org/Manifestation>,
+        <http://filmstandards.org/Preservationevent>,
+        <http://filmstandards.org/Productionevent>,
+        <http://filmstandards.org/Publicationevent>,
+        <http://filmstandards.org/Subjectterms>,
+        <http://filmstandards.org/Variant> ;
+    rdfs:range <http://filmstandards.org/Agent> .
+
+<http://filmstandards.org/HasAgentinstance> a owl:ObjectProperty ;
+    rdfs:label "Has Agent instance"@en ;
+    rdfs:domain <http://filmstandards.org/Agent> ;
+    rdfs:range <http://filmstandards.org/Agentinstance> .
+
+<http://filmstandards.org/HasAgentreference> a owl:ObjectProperty ;
+    rdfs:label "Has Agent reference"@en ;
+    rdfs:domain <http://filmstandards.org/Agent> ;
+    rdfs:range <http://filmstandards.org/Agentreference> .
+
+<http://filmstandards.org/HasAgenttype> a owl:ObjectProperty ;
+    rdfs:label "Has Agent type"@en ;
+    rdfs:domain <http://filmstandards.org/Agent> ;
+    rdfs:range <http://filmstandards.org/Agenttype> .
+
+<http://filmstandards.org/HasAsSubject> a owl:ObjectProperty ;
+    rdfs:label "HasAsSubject"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork> ;
+    rdfs:range <http://filmstandards.org/Subject> .
+
+<http://filmstandards.org/HasAspectratio> a owl:ObjectProperty ;
+    rdfs:label "Has Aspect ratio"@en ;
+    rdfs:domain <http://filmstandards.org/Format> ;
+    rdfs:range <http://filmstandards.org/Aspectratio> .
+
+<http://filmstandards.org/HasAwardname> a owl:ObjectProperty ;
+    rdfs:label "Has Award name"@en ;
+    rdfs:domain <http://filmstandards.org/Award> ;
+    rdfs:range <http://filmstandards.org/Awardname> .
+
+<http://filmstandards.org/HasCarriertype> a owl:ObjectProperty ;
+    rdfs:label "Has Carrier type"@en ;
+    rdfs:domain <http://filmstandards.org/Format> ;
+    rdfs:range <http://filmstandards.org/Carriertype> .
+
+<http://filmstandards.org/HasCataloguereference> a owl:ObjectProperty ;
+    rdfs:label "Has Catalogue reference"@en ;
+    rdfs:domain <http://filmstandards.org/Item> ;
+    rdfs:range <http://filmstandards.org/Cataloguereference> .
+
+<http://filmstandards.org/HasCertificatenumber> a owl:ObjectProperty ;
+    rdfs:label "Has Certificate number"@en ;
+    rdfs:domain <http://filmstandards.org/Decisionevent> ;
+    rdfs:range <http://filmstandards.org/Certificatenumber> .
+
+<http://filmstandards.org/HasChromatism> a owl:ObjectProperty ;
+    rdfs:label "Has Chromatism"@en ;
+    rdfs:domain <http://filmstandards.org/Colour> ;
+    rdfs:range <http://filmstandards.org/Chromatism> .
+
+<http://filmstandards.org/HasCode> a owl:ObjectProperty ;
+    rdfs:label "Has Code"@en ;
+    rdfs:domain <http://filmstandards.org/Region> ;
+    rdfs:range <http://filmstandards.org/Code> .
+
+<http://filmstandards.org/HasColour> a owl:ObjectProperty ;
+    rdfs:label "Has Colour"@en ;
+    rdfs:domain <http://filmstandards.org/Format> ;
+    rdfs:range <http://filmstandards.org/Colour> .
+
+<http://filmstandards.org/HasColoursystem> a owl:ObjectProperty ;
+    rdfs:label "Has Colour system"@en ;
+    rdfs:domain <http://filmstandards.org/Colour> ;
+    rdfs:range <http://filmstandards.org/Coloursystem> .
+
+<http://filmstandards.org/HasContent> a owl:ObjectProperty ;
+    rdfs:label "HasContent"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork> ;
+    rdfs:range <http://filmstandards.org/Content> .
+
+<http://filmstandards.org/HasContentdescription> a owl:ObjectProperty ;
+    rdfs:label "Has Content description"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork>,
+        <http://filmstandards.org/Content> ;
+    rdfs:range <http://filmstandards.org/Contentdescription> .
+
+<http://filmstandards.org/HasCountry> a owl:ObjectProperty ;
+    rdfs:label "Has Country"@en ;
+    rdfs:domain <http://filmstandards.org/CountryofReference> ;
+    rdfs:range <http://filmstandards.org/Country> .
+
+<http://filmstandards.org/HasCountryofreference> a owl:ObjectProperty ;
+    rdfs:label "Has Country of reference"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork> ;
+    rdfs:range <http://filmstandards.org/Countryofreference> .
+
+<http://filmstandards.org/HasDate> a owl:ObjectProperty ;
+    rdfs:label "Has Date"@en ;
+    rdfs:domain <http://filmstandards.org/Award>,
+        <http://filmstandards.org/Preservationevent>,
+        <http://filmstandards.org/Productionevent> ;
+    rdfs:range <http://filmstandards.org/Date> .
+
+<http://filmstandards.org/HasDecisiondate> a owl:ObjectProperty ;
+    rdfs:label "Has Decision date"@en ;
+    rdfs:domain <http://filmstandards.org/Decisionevent> ;
+    rdfs:range <http://filmstandards.org/Decisiondate> .
+
+<http://filmstandards.org/HasDecisiontype> a owl:ObjectProperty ;
+    rdfs:label "Has Decision type"@en ;
+    rdfs:domain <http://filmstandards.org/Decisionevent> ;
+    rdfs:range <http://filmstandards.org/Decisiontype> .
+
+<http://filmstandards.org/HasDescriptionsource> a owl:ObjectProperty ;
+    rdfs:label "Has Description source"@en ;
+    rdfs:domain <http://filmstandards.org/Contentdescription> ;
+    rdfs:range <http://filmstandards.org/Descriptionsource> .
+
+<http://filmstandards.org/HasDescriptiontext> a owl:ObjectProperty ;
+    rdfs:label "Has Description text"@en ;
+    rdfs:domain <http://filmstandards.org/Contentdescription> ;
+    rdfs:range <http://filmstandards.org/Descriptiontext> .
+
+<http://filmstandards.org/HasDescriptiontype> a owl:ObjectProperty ;
+    rdfs:label "Has Description type"@en ;
+    rdfs:domain <http://filmstandards.org/Contentdescription> ;
+    rdfs:range <http://filmstandards.org/Descriptiontype> .
+
+<http://filmstandards.org/HasEvent> a owl:ObjectProperty ;
+    rdfs:label "HasEvent"@en ;
+    rdfs:domain <http://filmstandards.org/Award>,
+        <http://filmstandards.org/CinematographicWork>,
+        <http://filmstandards.org/Item>,
+        <http://filmstandards.org/Manifestation>,
+        <http://filmstandards.org/Variant> ;
+    rdfs:range <http://filmstandards.org/Event> .
+
+<http://filmstandards.org/HasEventdetails> a owl:ObjectProperty ;
+    rdfs:label "Has Event details"@en ;
+    rdfs:domain <http://filmstandards.org/Productionevent> ;
+    rdfs:range <http://filmstandards.org/Eventdetails> .
+
+<http://filmstandards.org/HasEventname> a owl:ObjectProperty ;
+    rdfs:label "Has Event name"@en ;
+    rdfs:domain <http://filmstandards.org/Publicationevent> ;
+    rdfs:range <http://filmstandards.org/Eventname> .
+
+<http://filmstandards.org/HasEventrelationship> a owl:ObjectProperty ;
+    rdfs:label "Has Event relationship"@en ;
+    rdfs:domain <http://filmstandards.org/Award> ;
+    rdfs:range <http://filmstandards.org/Eventrelationship> .
+
+<http://filmstandards.org/HasExtent> a owl:ObjectProperty ;
+    rdfs:label "Has Extent"@en ;
+    rdfs:domain <http://filmstandards.org/Item>,
+        <http://filmstandards.org/Manifestation> ;
+    rdfs:range <http://filmstandards.org/Extent> .
+
+<http://filmstandards.org/HasFormat> a owl:ObjectProperty ;
+    rdfs:label "Has Format"@en ;
+    rdfs:domain <http://filmstandards.org/Manifestation> ;
+    rdfs:range <http://filmstandards.org/Format> .
+
+<http://filmstandards.org/HasGauge> a owl:ObjectProperty ;
+    rdfs:label "Has Gauge"@en ;
+    rdfs:domain <http://filmstandards.org/Format> ;
+    rdfs:range <http://filmstandards.org/Gauge> .
+
+<http://filmstandards.org/HasGeographicscope> a owl:ObjectProperty ;
+    rdfs:label "Has Geographic scope"@en ;
+    rdfs:domain <http://filmstandards.org/Title> ;
+    rdfs:range <http://filmstandards.org/Geographicscope> .
+
+<http://filmstandards.org/HasHasSound> a owl:ObjectProperty ;
+    rdfs:label "Has Has Sound"@en ;
+    rdfs:domain <http://filmstandards.org/Soundsystem> ;
+    rdfs:range <http://filmstandards.org/HasSound> .
+
+<http://filmstandards.org/HasHoldinginstitution> a owl:ObjectProperty ;
+    rdfs:label "Has Holding institution"@en ;
+    rdfs:domain <http://filmstandards.org/Item> ;
+    rdfs:range <http://filmstandards.org/Holdinginstitution> .
+
+<http://filmstandards.org/HasIdentifier> a owl:ObjectProperty ;
+    rdfs:label "Has Identifier"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork>,
+        <http://filmstandards.org/Manifestation>,
+        <http://filmstandards.org/Variant> ;
+    rdfs:range <http://filmstandards.org/Identifier> .
+
+<http://filmstandards.org/HasIdentifyingtitle> a owl:ObjectProperty ;
+    rdfs:label "Has Identifying title"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork> ;
+    rdfs:range <http://filmstandards.org/Identifyingtitle> .
+
+<http://filmstandards.org/HasInstantiationtype> a owl:ObjectProperty ;
+    rdfs:label "Has Instantiation type"@en ;
+    rdfs:domain <http://filmstandards.org/Item> ;
+    rdfs:range <http://filmstandards.org/Instantiationtype> .
+
+<http://filmstandards.org/HasInventorynumber> a owl:ObjectProperty ;
+    rdfs:label "Has Inventory number"@en ;
+    rdfs:domain <http://filmstandards.org/Item> ;
+    rdfs:range <http://filmstandards.org/Inventorynumber> .
+
+<http://filmstandards.org/HasIsrecordingsystem> a owl:ObjectProperty ;
+    rdfs:label "Has Is recording system"@en ;
+    rdfs:domain <http://filmstandards.org/Soundsystem> ;
+    rdfs:range <http://filmstandards.org/Isrecordingsystem> .
+
+<http://filmstandards.org/HasItem> a owl:ObjectProperty ;
+    rdfs:label "HasItem"@en ;
+    rdfs:domain <http://filmstandards.org/Manifestation> ;
+    rdfs:range <http://filmstandards.org/Item> .
+
+<http://filmstandards.org/HasItemspecifics> a owl:ObjectProperty ;
+    rdfs:label "Has Item specifics"@en ;
+    rdfs:domain <http://filmstandards.org/Item> ;
+    rdfs:range <http://filmstandards.org/Itemspecifics> .
+
+<http://filmstandards.org/HasLanguage> a owl:ObjectProperty ;
+    rdfs:label "Has Language"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork>,
+        <http://filmstandards.org/Contentdescription>,
+        <http://filmstandards.org/Manifestation>,
+        <http://filmstandards.org/Variant> ;
+    rdfs:range <http://filmstandards.org/Language> .
+
+<http://filmstandards.org/HasLocation> a owl:ObjectProperty ;
+    rdfs:label "Has Location"@en ;
+    rdfs:domain <http://filmstandards.org/Productionevent>,
+        <http://filmstandards.org/Publicationevent> ;
+    rdfs:range <http://filmstandards.org/Location> .
+
+<http://filmstandards.org/HasManifestation> a owl:ObjectProperty ;
+    rdfs:label "HasManifestation"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork>,
+        <http://filmstandards.org/Variant> ;
+    rdfs:range <http://filmstandards.org/Manifestation> .
+
+<http://filmstandards.org/HasMethod> a owl:ObjectProperty ;
+    rdfs:label "Has Method"@en ;
+    rdfs:domain <http://filmstandards.org/Soundsystem> ;
+    rdfs:range <http://filmstandards.org/Method> .
+
+<http://filmstandards.org/HasName> a owl:ObjectProperty ;
+    rdfs:label "Has Name"@en ;
+    rdfs:domain <http://filmstandards.org/Agent> ;
+    rdfs:range <http://filmstandards.org/Name> .
+
+<http://filmstandards.org/HasNameofapplicant> a owl:ObjectProperty ;
+    rdfs:label "Has Name of applicant"@en ;
+    rdfs:domain <http://filmstandards.org/IPRregistration> ;
+    rdfs:range <http://filmstandards.org/Nameofapplicant> .
+
+<http://filmstandards.org/HasNominationonly> a owl:ObjectProperty ;
+    rdfs:label "Has Nomination only"@en ;
+    rdfs:domain <http://filmstandards.org/Award> ;
+    rdfs:range <http://filmstandards.org/Nominationonly> .
+
+<http://filmstandards.org/HasNumeric> a owl:ObjectProperty ;
+    rdfs:label "Has Numeric"@en ;
+    rdfs:domain <http://filmstandards.org/Identifier> ;
+    rdfs:range <http://filmstandards.org/Numeric> .
+
+<http://filmstandards.org/HasOtherRelation> a owl:ObjectProperty ;
+    rdfs:label "HasOtherRelation"@en ;
+    rdfs:domain <http://filmstandards.org/Award>,
+        <http://filmstandards.org/CinematographicWork>,
+        <http://filmstandards.org/Decisionevent>,
+        <http://filmstandards.org/IPRregistration>,
+        <http://filmstandards.org/Item>,
+        <http://filmstandards.org/Manifestation>,
+        <http://filmstandards.org/Preservationevent>,
+        <http://filmstandards.org/Productionevent>,
+        <http://filmstandards.org/Publicationevent>,
+        <http://filmstandards.org/Subjectterms>,
+        <http://filmstandards.org/Variant> ;
+    rdfs:range <http://filmstandards.org/OtherRelation> .
+
+<http://filmstandards.org/HasPartdesignation> a owl:ObjectProperty ;
+    rdfs:label "Has Part designation"@en ;
+    rdfs:domain <http://filmstandards.org/Title> ;
+    rdfs:range <http://filmstandards.org/Partdesignation> .
+
+<http://filmstandards.org/HasPreservationdetail> a owl:ObjectProperty ;
+    rdfs:label "Has Preservation detail"@en ;
+    rdfs:domain <http://filmstandards.org/Preservationevent> ;
+    rdfs:range <http://filmstandards.org/Preservationdetail> .
+
+<http://filmstandards.org/HasPreservationtype> a owl:ObjectProperty ;
+    rdfs:label "Has Preservation type"@en ;
+    rdfs:domain <http://filmstandards.org/Preservationevent> ;
+    rdfs:range <http://filmstandards.org/Preservationtype> .
+
+<http://filmstandards.org/HasProductioneventtype> a owl:ObjectProperty ;
+    rdfs:label "Has Production event type"@en ;
+    rdfs:domain <http://filmstandards.org/Productionevent> ;
+    rdfs:range <http://filmstandards.org/Productioneventtype> .
+
+<http://filmstandards.org/HasPublicationdate> a owl:ObjectProperty ;
+    rdfs:label "Has Publication date"@en ;
+    rdfs:domain <http://filmstandards.org/Publicationevent> ;
+    rdfs:range <http://filmstandards.org/Publicationdate> .
+
+<http://filmstandards.org/HasPublicationtype> a owl:ObjectProperty ;
+    rdfs:label "Has Publication type"@en ;
+    rdfs:domain <http://filmstandards.org/Publicationevent> ;
+    rdfs:range <http://filmstandards.org/Publicationtype> .
+
+<http://filmstandards.org/HasRecordsource> a owl:ObjectProperty ;
+    rdfs:label "Has Record source"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork>,
+        <http://filmstandards.org/Manifestation>,
+        <http://filmstandards.org/Variant> ;
+    rdfs:range <http://filmstandards.org/Recordsource> .
+
+<http://filmstandards.org/HasRegion> a owl:ObjectProperty ;
+    rdfs:label "Has Region"@en ;
+    rdfs:domain <http://filmstandards.org/Productionevent>,
+        <http://filmstandards.org/Publicationevent> ;
+    rdfs:range <http://filmstandards.org/Region> .
+
+<http://filmstandards.org/HasRegionalscope> a owl:ObjectProperty ;
+    rdfs:label "Has Regional scope"@en ;
+    rdfs:domain <http://filmstandards.org/Decisionevent>,
+        <http://filmstandards.org/IPRregistration> ;
+    rdfs:range <http://filmstandards.org/Regionalscope> .
+
+<http://filmstandards.org/HasRegionname> a owl:ObjectProperty ;
+    rdfs:label "Has Region name"@en ;
+    rdfs:domain <http://filmstandards.org/Region> ;
+    rdfs:range <http://filmstandards.org/Regionname> .
+
+<http://filmstandards.org/HasRegistrationagency> a owl:ObjectProperty ;
+    rdfs:label "Has Registration agency"@en ;
+    rdfs:domain <http://filmstandards.org/IPRregistration> ;
+    rdfs:range <http://filmstandards.org/Registrationagency> .
+
+<http://filmstandards.org/HasRegistrationdate> a owl:ObjectProperty ;
+    rdfs:label "Has Registration date"@en ;
+    rdfs:domain <http://filmstandards.org/IPRregistration> ;
+    rdfs:range <http://filmstandards.org/Registrationdate> .
+
+<http://filmstandards.org/HasScheme> a owl:ObjectProperty ;
+    rdfs:label "Has Scheme"@en ;
+    rdfs:domain <http://filmstandards.org/Identifier> ;
+    rdfs:range <http://filmstandards.org/Scheme> .
+
+<http://filmstandards.org/HasSoundsystem> a owl:ObjectProperty ;
+    rdfs:label "Has Sound system"@en ;
+    rdfs:domain <http://filmstandards.org/Format> ;
+    rdfs:range <http://filmstandards.org/Soundsystem> .
+
+<http://filmstandards.org/HasSourceidentifier> a owl:ObjectProperty ;
+    rdfs:label "Has Source identifier"@en ;
+    rdfs:domain <http://filmstandards.org/Recordsource> ;
+    rdfs:range <http://filmstandards.org/Sourceidentifier> .
+
+<http://filmstandards.org/HasSourcename> a owl:ObjectProperty ;
+    rdfs:label "Has Source name"@en ;
+    rdfs:domain <http://filmstandards.org/Recordsource> ;
+    rdfs:range <http://filmstandards.org/Sourcename> .
+
+<http://filmstandards.org/HasSubjectterms> a owl:ObjectProperty ;
+    rdfs:label "Has Subject terms"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork>,
+        <http://filmstandards.org/Content> ;
+    rdfs:range <http://filmstandards.org/Subjectterms> .
+
+<http://filmstandards.org/HasSystemname> a owl:ObjectProperty ;
+    rdfs:label "Has System name"@en ;
+    rdfs:domain <http://filmstandards.org/Soundsystem> ;
+    rdfs:range <http://filmstandards.org/Systemname> .
+
+<http://filmstandards.org/HasTemporalscope> a owl:ObjectProperty ;
+    rdfs:label "Has Temporal scope"@en ;
+    rdfs:domain <http://filmstandards.org/Title> ;
+    rdfs:range <http://filmstandards.org/Temporalscope> .
+
+<http://filmstandards.org/HasTerm> a owl:ObjectProperty ;
+    rdfs:label "Has Term"@en ;
+    rdfs:domain <http://filmstandards.org/Subjectterms> ;
+    rdfs:range <http://filmstandards.org/Term> .
+
+<http://filmstandards.org/HasTermname> a owl:ObjectProperty ;
+    rdfs:label "Has Term name"@en ;
+    rdfs:domain <http://filmstandards.org/Term> ;
+    rdfs:range <http://filmstandards.org/Termname> .
+
+<http://filmstandards.org/HasTitle> a owl:ObjectProperty ;
+    rdfs:label "Has Title"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork>,
+        <http://filmstandards.org/Item>,
+        <http://filmstandards.org/Manifestation>,
+        <http://filmstandards.org/Variant> ;
+    rdfs:range <http://filmstandards.org/Title> .
+
+<http://filmstandards.org/HasTitlerelationship> a owl:ObjectProperty ;
+    rdfs:label "Has Title relationship"@en ;
+    rdfs:domain <http://filmstandards.org/Title> ;
+    rdfs:range <http://filmstandards.org/Titlerelationship> .
+
+<http://filmstandards.org/HasTitletext> a owl:ObjectProperty ;
+    rdfs:label "Has Title text"@en ;
+    rdfs:domain <http://filmstandards.org/Title> ;
+    rdfs:range <http://filmstandards.org/Titletext> .
+
+<http://filmstandards.org/HasUnit> a owl:ObjectProperty ;
+    rdfs:label "Has Unit"@en ;
+    rdfs:domain <http://filmstandards.org/Partdesignation> ;
+    rdfs:range <http://filmstandards.org/Unit> .
+
+<http://filmstandards.org/HasValue> a owl:ObjectProperty ;
+    rdfs:label "Has Value"@en ;
+    rdfs:domain <http://filmstandards.org/Identifier>,
+        <http://filmstandards.org/Partdesignation> ;
+    rdfs:range <http://filmstandards.org/Value> .
+
+<http://filmstandards.org/HasVariant> a owl:ObjectProperty ;
+    rdfs:label "HasVariant"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork> ;
+    rdfs:range <http://filmstandards.org/Variant> .
+
+<http://filmstandards.org/HasVerdict> a owl:ObjectProperty ;
+    rdfs:label "Has Verdict"@en ;
+    rdfs:domain <http://filmstandards.org/Decisionevent> ;
+    rdfs:range <http://filmstandards.org/Verdict> .
+
+<http://filmstandards.org/HasYearofreference> a owl:ObjectProperty ;
+    rdfs:label "Has Year of reference"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork> ;
+    rdfs:range <http://filmstandards.org/Yearofreference> .
+
+<http://filmstandards.org/HasdescriptionLevel> a owl:DatatypeProperty ;
+    rdfs:label "Has descriptionLevel"@en ;
+    rdfs:domain <http://filmstandards.org/CinematographicWork> .
+
+<http://filmstandards.org/HasframeRate> a owl:DatatypeProperty ;
+    rdfs:label "Has frameRate"@en ;
+    rdfs:domain <http://filmstandards.org/Extent> .
+
+<http://filmstandards.org/Haslanguage> a owl:DatatypeProperty ;
+    rdfs:label "Has language"@en ;
+    rdfs:domain <http://filmstandards.org/Subjectterms> .
+
+<http://filmstandards.org/HasmanifestationType> a owl:DatatypeProperty ;
+    rdfs:label "Has manifestationType"@en ;
+    rdfs:domain <http://filmstandards.org/Manifestation> .
+
+<http://filmstandards.org/Hasorigin> a owl:DatatypeProperty ;
+    rdfs:label "Has origin"@en ;
+    rdfs:domain <http://filmstandards.org/Identifyingtitle> .
+
+<http://filmstandards.org/Hasreference> a owl:DatatypeProperty ;
+    rdfs:label "Has reference"@en ;
+    rdfs:domain <http://filmstandards.org/CountryofReference>,
+        <http://filmstandards.org/Extent>,
+        <http://filmstandards.org/Yearofreference> .
+
+<http://filmstandards.org/Hasscheme> a owl:DatatypeProperty ;
+    rdfs:label "Has scheme"@en ;
+    rdfs:domain <http://filmstandards.org/Code>,
+        <http://filmstandards.org/Subjectterms> .
+
+<http://filmstandards.org/HassourceID> a owl:DatatypeProperty ;
+    rdfs:label "Has sourceID"@en ;
+    rdfs:domain <http://filmstandards.org/Agent>,
+        <http://filmstandards.org/Decisionevent>,
+        <http://filmstandards.org/Item>,
+        <http://filmstandards.org/Manifestation>,
+        <http://filmstandards.org/Productionevent>,
+        <http://filmstandards.org/Publicationevent>,
+        <http://filmstandards.org/Variant> .
+
+<http://filmstandards.org/Hastermid> a owl:DatatypeProperty ;
+    rdfs:label "Has termid"@en ;
+    rdfs:domain <http://filmstandards.org/Term> .
+
+<http://filmstandards.org/Hasunit> a owl:DatatypeProperty ;
+    rdfs:label "Has unit"@en ;
+    rdfs:domain <http://filmstandards.org/Extent> .
+
+<http://filmstandards.org/Hasusage> a owl:DatatypeProperty ;
+    rdfs:label "Has usage"@en ;
+    rdfs:domain <http://filmstandards.org/Language> .
+
+<http://filmstandards.org/HasvariantType> a owl:DatatypeProperty ;
+    rdfs:label "Has variantType"@en ;
+    rdfs:domain <http://filmstandards.org/Variant> .
+
+<http://filmstandards.org/HasvocabularySource> a owl:DatatypeProperty ;
+    rdfs:label "Has vocabularySource"@en ;
+    rdfs:domain <http://filmstandards.org/Chromatism> .
+
+<http://filmstandards.org/Chromatism> a owl:Class ;
+    rdfs:label "Chromatism"@en .
+
+<http://filmstandards.org/Code> a owl:Class ;
+    rdfs:label "Code"@en .
+
+<http://filmstandards.org/CountryofReference> a owl:Class ;
+    rdfs:label "Country of Reference"@en .
+
+<http://filmstandards.org/Identifyingtitle> a owl:Class ;
+    rdfs:label "Identifying title"@en .
+
+<http://filmstandards.org/Language> a owl:Class ;
+    rdfs:label "Language"@en .
+
+<http://filmstandards.org/Yearofreference> a owl:Class ;
+    rdfs:label "Year of reference"@en .
+
+<http://filmstandards.org/Colour> a owl:Class ;
+    rdfs:label "Colour"@en .
+
+<http://filmstandards.org/Content> a owl:Class ;
+    rdfs:label "Content"@en .
+
+<http://filmstandards.org/Partdesignation> a owl:Class ;
+    rdfs:label "Part designation"@en .
+
+<http://filmstandards.org/Recordsource> a owl:Class ;
+    rdfs:label "Record source"@en .
+
+<http://filmstandards.org/Region> a owl:Class ;
+    rdfs:label "Region"@en .
+
+<http://filmstandards.org/Term> a owl:Class ;
+    rdfs:label "Term"@en .
+
+<http://filmstandards.org/Extent> a owl:Class ;
+    rdfs:label "Extent"@en .
+
+<http://filmstandards.org/Identifier> a owl:Class ;
+    rdfs:label "Identifier"@en .
+
+<http://filmstandards.org/Contentdescription> a owl:Class ;
+    rdfs:label "Content description"@en .
+
+<http://filmstandards.org/Preservationevent> a owl:Class ;
+    rdfs:label "Preservation event"@en .
+
+<http://filmstandards.org/Soundsystem> a owl:Class ;
+    rdfs:label "Sound system"@en .
+
+<http://filmstandards.org/Agent> a owl:Class ;
+    rdfs:label "Agent"@en .
+
+<http://filmstandards.org/Format> a owl:Class ;
+    rdfs:label "Format"@en .
+
+<http://filmstandards.org/IPRregistration> a owl:Class ;
+    rdfs:label "IPR registration"@en .
+
+<http://filmstandards.org/Subjectterms> a owl:Class ;
+    rdfs:label "Subject terms"@en .
+
+<http://filmstandards.org/Title> a owl:Class ;
+    rdfs:label "Title"@en .
+
+<http://filmstandards.org/Award> a owl:Class ;
+    rdfs:label "Award"@en .
+
+<http://filmstandards.org/Decisionevent> a owl:Class ;
+    rdfs:label "Decision event"@en .
+
+<http://filmstandards.org/Productionevent> a owl:Class ;
+    rdfs:label "Production event"@en .
+
+<http://filmstandards.org/Publicationevent> a owl:Class ;
+    rdfs:label "Publication event"@en .
+
+<http://filmstandards.org/Variant> a owl:Class ;
+    rdfs:label "Variant"@en .
+
+<http://filmstandards.org/Item> a owl:Class ;
+    rdfs:label "Item"@en .
+
+<http://filmstandards.org/Manifestation> a owl:Class ;
+    rdfs:label "Manifestation"@en .
+
+<http://filmstandards.org/CinematographicWork> a owl:Class ;
+    rdfs:label "Cinematographic Work"@en .
+
